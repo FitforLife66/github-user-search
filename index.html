@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  
+  <title>Frontend Mentor | GitHub user search app</title>
+</head>
+<body>
+  <div id="wrap-all">
+    <header id="header">
+      <h1>devfinder</h1>
+      <label id="theme-btn-label" for="theme-btn">
+        <p>Dark</p>
+        <img src="./assets/icon-moon.svg" alt="">
+      </label>
+      <input id="theme-btn" type="checkbox">
+    </header>
+
+    <section id="search">
+      <img id="search__icon" src="./assets/icon-search.svg" alt="" >
+      <input id="search__input" type="text" placeholder="Search GitHub username...">
+      <button id="search__btn" data-no-result="">Search</button>    
+    </section>
+
+    <main id="user-wrapper">
+      <div id="user-image">
+        <img id="js-avatar" src="./assets/user-img.svg" alt="">
+      </div>
+      <div id="user-header">
+        <div id="user-header__name">
+          <h2 id="js-name"></h2>
+          <h3  id="js-login"></h3>
+        </div>
+        <p id="js-created"></p>
+      </div>
+      <div id="user-content">
+        <p id="js-bio"></p>      
+        <div id="user-figures">
+            <h4>Repos</h4>
+            <h4>Followers</h4>
+            <h4>Following</h4>
+            <p id="js-repos"></p>
+            <p id="js-followers"></p>
+            <p id="js-following"></p>         
+        </div>
+        <div id="user-links">
+          <div class="user-link-wrapper">
+            <div> 
+              <img class="user-links__icon" src="./assets/icon-location.svg" alt="location">
+            </div>           
+            <a id="js-location" target="_blank"></a>
+          </div>
+          <div class="user-link-wrapper">
+            <div> 
+              <img class="user-links__icon" src="./assets/icon-twitter.svg" alt="twitter">
+            </div>   
+            <a id="js-twitter" target="_blank"></a>
+          </div>
+          <div class="user-link-wrapper">
+            <div> 
+              <img class="user-links__icon" src="./assets/icon-website.svg" alt="website">
+            </div> 
+            <a id="js-blog" target="_blank"></a>
+          </div>
+          <div class="user-link-wrapper">
+            <div> 
+              <img class="user-links__icon" src="./assets/icon-company.svg" alt="company">
+            </div> 
+            <a id="js-html-url" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+      
+    </main>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
